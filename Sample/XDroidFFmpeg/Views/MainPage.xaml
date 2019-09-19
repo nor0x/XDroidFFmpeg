@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Shell.NavBarIsVisible="False"
+             xmlns:vm="clr-namespace:XDroidFFmpeg.ViewModels"
+             x:Class="XDroidFFmpeg.Views.MainPage">
+    <ContentPage.BindingContext>
+        <vm:MainViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid RowSpacing="0" Margin="8">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="120" />
+            </Grid.RowDefinitions>
+            <Editor Grid.Row="0" Placeholder="your ffmpeg command here..." Text="{Binding Command}"
+                VerticalOptions="FillAndExpand" 
+                HorizontalOptions="FillAndExpand" TextColor="Green" />
+            <StackLayout Grid.Row="1">
+                <Button Text="Run Command" Command="{Binding RunFFmpegCommand}" HorizontalOptions="FillAndExpand" BackgroundColor="Green" TextColor="Yellow" IsEnabled="{Binding ButtonEnabled}" />
+                <StackLayout Orientation="Horizontal" Margin="8">
+                    <ProgressBar Progress="{Binding Progress, Mode=TwoWay}" ProgressColor="Green" HorizontalOptions="FillAndExpand" />
+                    <Label Text="{Binding ProgressString}" FontSize="Medium" HorizontalOptions="End" />
+                </StackLayout>
+            </StackLayout>
+            <Button Grid.Row="2" Text=" 💡 👉 to run the default command please create a ''ffmpegtest'' folder in ''/storage/emulated/0/'' and place a ''video.mp4'' and ''watermark.png'' file in there"  VerticalOptions="End" FontSize="Medium" TextColor="Gray" BackgroundColor="Transparent" Command="{Binding SetDefaultCmdCommand}" />
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
