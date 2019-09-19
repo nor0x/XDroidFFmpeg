@@ -9,9 +9,6 @@ Using [FFmpeg](https://github.com/FFmpeg/FFmpeg) in `(Xamarin.)Android` seems ea
 
 Major credits to [@microshow](https://github.com/microshow) for doing the hard work 👍.
 
-#### Watermark Demo
-<img src="https://raw.githubusercontent.com/nor0x/XDroidFFmpeg/master/Art/demo.gif?raw=true" width="350px" />
-
 ## Getting started
 
 Start by adding a reference to [RxFFmpeg_Bindings.csproj](https://github.com/nor0x/XDroidFFmpeg/blob/master/RxFFmpeg_Bindings/RxFFmpeg_Bindings.csproj "RxFFmpeg_Bindings.csproj") to the `Xamarin.Android` project. Set API Level and supported ABIs in the project properties. Hint: use `arm64-v8a` for best performance on supported devices.
@@ -27,6 +24,9 @@ Running commands against `ffmpeg` is as simple as:
 For getting callbacks an implementation of `IFFmpegListener` can be passed to `RunCommand`
 
 There is also a demo project which demonstrates adding .PNG watermark to an .MP4 video. To get the demo working you need to create a `ffmpegtest` folder in `/storage/emulated/0/` and add a `video.mp4` and `watermark.png` file to this folder.
+
+#### Watermark Demo
+<img src="https://raw.githubusercontent.com/nor0x/XDroidFFmpeg/master/Art/demo.gif?raw=true" width="350px" />
 
 More demo scenarios might be added in the future. Head over to [ffmpeg documentation](https://ffmpeg.org/ffmpeg.html) for more.
 
