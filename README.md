@@ -23,7 +23,7 @@ Running commands against `ffmpeg` is as simple as:
     RxFFmpegInvoke.Instance.RunCommand(command, null);
 For getting callbacks an implementation of `IFFmpegListener` can be passed to `RunCommand`
 
-There is also a demo project which demonstrates adding .PNG watermark to an .MP4 video. To get the demo working you need to create a `ffmpegtest` folder in `/storage/emulated/0/` and add a `video.mp4` and `watermark.png` file to this folder.
+There is also a demo project which demonstrates adding `.PNG` watermark to an `.MP4` video. To get the demo working you need to create a `ffmpegtest` folder in `/storage/emulated/0/` and add a `video.mp4` and `watermark.png` file to this folder.
 
 #### Watermark Demo
 <img src="https://raw.githubusercontent.com/nor0x/XDroidFFmpeg/master/Art/demo.gif?raw=true" width="350px" />
