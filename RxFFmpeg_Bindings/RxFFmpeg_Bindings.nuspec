@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>XDroidFFmpeg</id>
+    <version>0.0.1</version>
+    <title>Xamarin.Android Binding for RxFFmpeg</title>
+    <authors>nor0x</authors>
+    <owners>nor0x</owners>
+    <licenseUrl>https://github.com/nor0x/XDroidFFmpeg</licenseUrl>
+    <projectUrl>https://github.com/nor0x/XDroidFFmpeg</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/nor0x/XDroidFFmpeg/master/Art/logo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>XDroidFFmpeg provides powerful audio and video processing / editing powered by ffmpeg</description>
+    <releaseNotes>initial release</releaseNotes>
+    <copyright>Copyright © nor0x 2019</copyright>
+    <tags>ffmpeg xamarin android</tags>
+    <dependencies>
+    <group targetFramework="MonoAndroid">
+    </group>
+    </dependencies>
+  </metadata>
+  <files>
+          <file src="bin\Release\RxFFmpeg_Bindings.dll" target="lib\MonoAndroid90\RxFFmpeg_Bindings.dll" />
+  </files>
+</package>
