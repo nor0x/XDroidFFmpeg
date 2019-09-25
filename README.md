@@ -14,8 +14,10 @@ Major credits to [@microshow](https://github.com/microshow) for doing the hard w
 ## Getting started
 
 ### NuGet
-XDroidFFmpeg is up on NuGet
+XDroidFFmpeg is up on NuGet and GitHub
 [https://www.nuget.org/packages/XDroidFFmpeg](https://www.nuget.org/packages/XDroidFFmpeg)
+[https://github.com/nor0x/XDroidFFmpeg/packages](https://github.com/nor0x/XDroidFFmpeg/packages)
+
 
 ### Project
 Start by adding a reference to [RxFFmpeg_Bindings.csproj](https://github.com/nor0x/XDroidFFmpeg/blob/master/RxFFmpeg_Bindings/RxFFmpeg_Bindings.csproj "RxFFmpeg_Bindings.csproj") to the `Xamarin.Android` project. Set API Level and supported ABIs in the project properties. Hint: use `arm64-v8a` for best performance on supported devices.
