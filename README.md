@@ -17,6 +17,7 @@ Major credits to [@microshow](https://github.com/microshow) for doing the hard w
 XDroidFFmpeg is up on NuGet and GitHub
 
 [https://www.nuget.org/packages/XDroidFFmpeg](https://www.nuget.org/packages/XDroidFFmpeg)
+
 [https://github.com/nor0x/XDroidFFmpeg/packages](https://github.com/nor0x/XDroidFFmpeg/packages)
 
 
