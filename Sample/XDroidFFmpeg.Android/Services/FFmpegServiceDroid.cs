@@ -20,7 +20,7 @@ namespace XDroidFFmpeg.Droid.Services
             var task = Task.Run(() =>
             {
                 var li = new FFmpegListener(callback);
-                var command = cmd.Split(" ");
+                var command = cmd.Split(' ');
                 RxFFmpegInvoke.Instance.FFmpegListener = li;
                 var i = RxFFmpegInvoke.Instance.RunCommand(command, li);
 
