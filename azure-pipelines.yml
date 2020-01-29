@@ -1,24 +1,32 @@
+# Xamarin.Android
+# Build a Xamarin.Android project.
+# Add steps that test, sign, and distribute an app, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/xamarin
+
 trigger:
 - master
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'macos-latest'
 
 variables:
-  solution: '**/*.sln'
-  buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
+  outputDirectory: '$(build.binariesDirectory)/$(buildConfiguration)'
 
 steps:
 - task: NuGetToolInstaller@1
 
 - task: NuGetCommand@2
   inputs:
-    restoreSolution: '$(solution)'
+    restoreSolution: '**/*.sln'
 
-- task: VSBuild@1
+- task: XamarinAndroid@1
   inputs:
-    solution: '$(solution)'
-    platform: '$(buildPlatform)'
+    projectFile: '**/*droid*.csproj'
+    outputDirectory: '$(outputDirectory)'
     configuration: '$(buildConfiguration)'
-
+- task: NuGetCommand@2
+  inputs:
+    command: 'pack'
+    packagesToPack: '**/*.nuspec'
+    versioningScheme: 'byBuildNumber'
