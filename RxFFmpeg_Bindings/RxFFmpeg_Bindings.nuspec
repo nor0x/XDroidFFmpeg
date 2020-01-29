@@ -3,7 +3,7 @@
   <metadata>
     <id>XDroidFFmpeg</id>
     <version>0.0.1</version>
-    <title>Xamarin.Android Binding for RxFFmpeg</title>
+    <title>Xamarin.Android Bindings for RxFFmpeg</title>
     <authors>nor0x</authors>
     <owners>nor0x</owners>
     <licenseUrl>https://github.com/nor0x/XDroidFFmpeg</licenseUrl>

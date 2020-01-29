@@ -105,6 +105,10 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\RxFFmpeg_Bindings\RxFFmpeg_Bindings.csproj">
+      <Project>{d7bef455-2c13-4ced-a706-1720c6da1f8a}</Project>
+      <Name>RxFFmpeg_Bindings</Name>
+    </ProjectReference>
     <ProjectReference Include="..\XDroidFFmpeg\XDroidFFmpeg.csproj">
       <Project>{4359fc38-7078-4ed9-ba0a-a634ce259eb9}</Project>
       <Name>XDroidFFmpeg</Name>
