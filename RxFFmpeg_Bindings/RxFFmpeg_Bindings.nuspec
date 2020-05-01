@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>XDroidFFmpeg</id>
-    <version>0.0.3</version>
+    <version>3.1.0</version>
     <title>Xamarin.Android Bindings for RxFFmpeg</title>
     <authors>nor0x</authors>
     <owners>nor0x</owners>
@@ -12,7 +12,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>XDroidFFmpeg provides powerful audio and video processing / editing powered by ffmpeg</description>
     <releaseNotes>initial release</releaseNotes>
-    <copyright>Copyright © nor0x 2019</copyright>
+    <copyright>Copyright © nor0x 2020</copyright>
     <tags>ffmpeg xamarin android</tags>
     <dependencies>
     <group targetFramework="MonoAndroid">
