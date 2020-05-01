@@ -1,9 +1,14 @@
 <img src="https://raw.githubusercontent.com/nor0x/XDroidFFmpeg/master/Art/logo.svg?sanitize=true" width="150px" />
 
 # XDroidFFmpeg
+[![Build Status](https://dev.azure.com/nor0x/XDroidFFmpeg/_apis/build/status/nor0x.XDroidFFmpeg?branchName=master)](https://dev.azure.com/nor0x/XDroidFFmpeg/_build/latest?definitionId=6&branchName=master) [![](https://img.shields.io/nuget/vpre/XDroidFFmpeg.svg)](https://nuget.org/packages/XDroidFFmpeg)
+
 Xamarin.Android bindings for [RxFFmpeg](https://github.com/microshow/RxFFmpeg). (Kudos [@microshow](https://github.com/microshow))  This `Java Bindings Library` provides performant audio and video processing / editing powered by `FFmpeg 4.0` + `X264` + `mp3lame` + `fdk-aac`.
 
-[![](https://img.shields.io/nuget/vpre/XDroidFFmpeg.svg)](https://nuget.org/packages/XDroidFFmpeg)
+| Platform      | Support       | Sample|
+| :-------------: |:-------------:| :-----:|
+| Xamarin.Android      | ✔      |  ✔    |
+| Xamarin.Forms        | ✔      |  ❌  |
 
 ## Why XDroidFFmpeg?
 
