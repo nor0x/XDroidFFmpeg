@@ -8,6 +8,7 @@
     <owners>nor0x</owners>
     <licenseUrl>https://github.com/nor0x/XDroidFFmpeg</licenseUrl>
     <projectUrl>https://github.com/nor0x/XDroidFFmpeg</projectUrl>
+    <repository type="git" url="https://github.com/nor0x/XDroidFFmpeg" />
     <iconUrl>https://raw.githubusercontent.com/nor0x/XDroidFFmpeg/master/Art/logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>XDroidFFmpeg provides powerful audio and video processing / editing powered by ffmpeg</description>
