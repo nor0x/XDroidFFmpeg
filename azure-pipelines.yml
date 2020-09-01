@@ -39,6 +39,8 @@ steps:
     nuGetFeedType: 'external'
     externalFeedCredentials: 'gh-packages'
     publishFeedCredentials: 'gh-packages'
+    allowPackageConflicts: true
+
 
 - task: NuGetCommand@2
   displayName: NuGet push Nuget.org
@@ -47,3 +49,4 @@ steps:
     packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
     nuGetFeedType: 'external'
     publishFeedCredentials: 'nuget.org'
+    allowPackageConflicts: true
