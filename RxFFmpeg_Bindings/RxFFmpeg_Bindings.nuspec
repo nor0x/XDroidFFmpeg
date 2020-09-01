@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>XDroidFFmpeg</id>
-    <version>4.3.0</version>
+    <version>4.8.0</version>
     <title>Xamarin.Android Bindings for RxFFmpeg</title>
     <authors>nor0x</authors>
     <owners>nor0x</owners>
