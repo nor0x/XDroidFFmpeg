@@ -40,6 +40,8 @@ steps:
     externalFeedCredentials: 'gh-packages'
     publishFeedCredentials: 'gh-packages'
     allowPackageConflicts: true
+  continueOnError: true
+    
 
 
 - task: NuGetCommand@2
